@@ -83,7 +83,7 @@ public class Example3 {
 
         Optional<Person> result = FluentIterable.from(persons)
                                                 // Statement-lambda
-                                                .firstMatch(person -> {
+                                                .firstMatch((Person person) -> {
                                                     if (person == null) {
                                                         return false;
                                                     } else {
